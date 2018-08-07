@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import AppRouter from './routers/AppRouter';
-import ExpenseStore from './stores/store';
+import ExpenseStore from './stores/Store';
 
 import 'normalize.css/normalize.css';
 import './styles/styles.scss';
