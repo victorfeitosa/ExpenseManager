@@ -1,8 +1,26 @@
 import { createStore, combineReducers } from 'redux';
 import uuid from 'uuid';
 
+// Filters
+const sortByDate = () => ({
+  type: 'SORT_BY_DATE'
+});
+
+const sortByAmount = () => ({
+  type: 'SORT_BY_AMOUNT'
+});
+
+const setStartDate = (date = undefined) => ({
+  type: 'SET_START_DATE',
+  date
+});
+
+const setEndDate = (date = undefined) => ({
+  type: 'SET_END_DATE',
+  date
+});
+
 // Expenses
-// Add expense
 const addExpense = (
   {
     description = '',
@@ -20,7 +38,7 @@ const addExpense = (
     createdAt
   }
 });
-// Remove expense
+
 const removeExpense = ({
   id
 } = {}
@@ -29,40 +47,41 @@ const removeExpense = ({
   id
 });
 
-// Edit expense
-const editExpense = (id, updates) => ({
+const editExpense = ({
+  id,
+  updates
+} = {}
+) => ({
   type: 'EDIT_EXPENSE',
   id,
   updates
 });
 
-// Set text filter
-const setTextFilter = (text='') => ({
-  type: 'SET_TEXT_FILTER',
-  text
-});
+const getVisibleExpenses = (expenses, filters) => {
 
-// Reducers
+};
+
 const expenseReducerDefaultState = [];
 const expensesReducer = (state = expenseReducerDefaultState, action) => {
   switch (action.type) {
     case 'ADD_EXPENSE':
       return [...state, action.expense];
     break;
-    case 'REMOVE_EXPENSE':
-      return state.filter(({id}) => id !== action.id);
-    break;
     case 'EDIT_EXPENSE':
       return state.map((expense) => {
         if(expense.id === action.id) {
+          console.log(action);
           return {
             ...expense,
             ...action.updates
-          }
+          };
         } else {
           return expense;
         }
       });
+    break;
+    case 'REMOVE_EXPENSE':
+      return state.filter(({id}) => id !== action.id);
     break;
     default:
       return state;
@@ -78,11 +97,16 @@ const filtersReducerDefaultState = {
 };
 const filtersReducer = (state = filtersReducerDefaultState, action) => {
   switch (action.type) {
-    case 'SET_TEXT_FILTER':
-      return {
-        ...state,
-        text: action.text
-      };
+    case 'SORT_BY_AMOUNT':
+      return{...state, sortBy: 'amount'}
+    case 'SORT_BY_DATE':
+      return{...state, sortBy: 'date'}
+    break;
+    case 'SET_START_DATE':
+      return{...state, startDate: action.date}
+      break;
+    case 'SET_END_DATE':
+      return{...state, endDate: action.date}
     break;
     default:
       return state;
@@ -105,12 +129,16 @@ const expense1 = store.dispatch(addExpense({description: 'One', amount: 300}));
 const expense2 = store.dispatch(addExpense({description: 'This is expense 2', amount: 200}));
 const expense3 = store.dispatch(addExpense({description: 'Exp3', amount: 100}));
 
-store.dispatch(removeExpense({id: expense1.expense.id}));
-store.dispatch(removeExpense({id: expense3.expense.id}));
+// store.dispatch(removeExpense({id: expense1.expense.id}));
+// store.dispatch(removeExpense({id: expense3.expense.id}));
 
-store.dispatch(editExpense(expense2.expense.id, {amount: 500}));
+// store.dispatch(sortByAmount());
+// store.dispatch(sortByDate());
 
-store.dispatch(setTextFilter('This'));
+store.dispatch(editExpense({id: expense1.expense.id, amount: 3000}));
+
+store.dispatch(setStartDate(125));
+store.dispatch(setEndDate(128));
 
 export default store;
 
