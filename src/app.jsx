@@ -11,6 +11,24 @@ import 'normalize.css/normalize.css';
 import './styles/styles.scss';
 
 const store = configureStore();
+
+store.dispatch(addExpense({
+  description: 'Snacks',
+  amount: 3000,
+  createdAt: new Date().toUTCString()
+}));
+store.dispatch(addExpense({
+  description: 'Groceries',
+  amount: 10000,
+  createdAt: new Date().toUTCString()
+}));
+store.dispatch(addExpense({
+  description: 'Rent',
+  amount: 109500,
+  createdAt: new Date().toUTCString()
+}));
+
+
 const jsx = (
   <Provider store={store}>
     <AppRouter />

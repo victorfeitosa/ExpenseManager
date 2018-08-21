@@ -13,16 +13,5 @@ export default () => {
     })
   );
 
-  store.dispatch(addExpense({
-    description: 'Snacks',
-    amount: 3000,
-    createdAt: new Date().toUTCString()
-  }));
-  store.dispatch(addExpense({
-    description: 'Groceries',
-    amount: 10000,
-    createdAt: new Date().toUTCString()
-  }));
-
   return store;
 }
