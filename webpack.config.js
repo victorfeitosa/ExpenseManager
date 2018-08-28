@@ -15,14 +15,7 @@ module.exports = {
         ],
         exclude: [
           path.resolve(__dirname, 'node_modules')
-        ],
-        query: {
-          presets: ['env', 'react'],
-          plugins: [
-            'transform-class-properties',
-            'transform-object-rest-spread'
-          ]
-        }
+        ]
       },
       {
         test: /\.s?css$/,
