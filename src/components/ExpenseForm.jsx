@@ -42,7 +42,7 @@ export default class ExpenseForm extends React.Component {
       }));
     }
   };
-  onFocusChange = ({focused}) => {
+  onFocusChange = (focused) => {
     this.setState(() => ({ calendarFocused: focused }));
   };
   onSubmit = (e) => {
@@ -53,7 +53,7 @@ export default class ExpenseForm extends React.Component {
       }));
     } else {
       this.setState(() => ({
-        error: undefined
+        error: ''
       }));
       this.props.onSubmit({
         description: this.state.description,
