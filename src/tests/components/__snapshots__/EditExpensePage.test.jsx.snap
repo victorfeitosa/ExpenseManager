@@ -1,0 +1,178 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render EditExpensePage correctly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <EditExpensePage
+    editExpense={[MockFunction]}
+    expense={
+      Object {
+        "amount": 1500000,
+        "createdAt": -345600000,
+        "description": "Rent",
+        "id": "2",
+        "note": "",
+      }
+    }
+    history={
+      Object {
+        "push": [MockFunction],
+      }
+    }
+    removeExpense={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <ExpenseForm
+          buttonText="Edit expense"
+          expense={
+            Object {
+              "amount": 1500000,
+              "createdAt": -345600000,
+              "description": "Rent",
+              "id": "2",
+              "note": "",
+            }
+          }
+          onSubmit={[Function]}
+        />,
+        <button
+          onClick={[Function]}
+        >
+          Remove Expense ×
+        </button>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "buttonText": "Edit expense",
+          "expense": Object {
+            "amount": 1500000,
+            "createdAt": -345600000,
+            "description": "Rent",
+            "id": "2",
+            "note": "",
+          },
+          "onSubmit": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Remove Expense ×",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "Remove Expense ×",
+        "type": "button",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <ExpenseForm
+            buttonText="Edit expense"
+            expense={
+              Object {
+                "amount": 1500000,
+                "createdAt": -345600000,
+                "description": "Rent",
+                "id": "2",
+                "note": "",
+              }
+            }
+            onSubmit={[Function]}
+          />,
+          <button
+            onClick={[Function]}
+          >
+            Remove Expense ×
+          </button>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "buttonText": "Edit expense",
+            "expense": Object {
+              "amount": 1500000,
+              "createdAt": -345600000,
+              "description": "Rent",
+              "id": "2",
+              "note": "",
+            },
+            "onSubmit": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Remove Expense ×",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "Remove Expense ×",
+          "type": "button",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    "attachTo": undefined,
+    "hydrateIn": undefined,
+  },
+}
+`;
