@@ -28,10 +28,11 @@ ShallowWrapper {
           Gum
         </p>,
         <b>
-          155
+          $1.55
         </b>,
         <p>
-          0
+           - 
+          31/12/1969
         </p>,
         <Link
           replace={false}
@@ -59,10 +60,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": 155,
+          "children": "$1.55",
         },
         "ref": null,
-        "rendered": 155,
+        "rendered": "$1.55",
         "type": "b",
       },
       Object {
@@ -70,10 +71,16 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": 0,
+          "children": Array [
+            " - ",
+            "31/12/1969",
+          ],
         },
         "ref": null,
-        "rendered": 0,
+        "rendered": Array [
+          " - ",
+          "31/12/1969",
+        ],
         "type": "p",
       },
       Object {
@@ -103,10 +110,11 @@ ShallowWrapper {
             Gum
           </p>,
           <b>
-            155
+            $1.55
           </b>,
           <p>
-            0
+             - 
+            31/12/1969
           </p>,
           <Link
             replace={false}
@@ -134,10 +142,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": 155,
+            "children": "$1.55",
           },
           "ref": null,
-          "rendered": 155,
+          "rendered": "$1.55",
           "type": "b",
         },
         Object {
@@ -145,10 +153,16 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": 0,
+            "children": Array [
+              " - ",
+              "31/12/1969",
+            ],
           },
           "ref": null,
-          "rendered": 0,
+          "rendered": Array [
+            " - ",
+            "31/12/1969",
+          ],
           "type": "p",
         },
         Object {
