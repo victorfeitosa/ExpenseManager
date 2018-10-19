@@ -8,7 +8,7 @@ export class ExpenseListFilters extends React.Component {
     calendarFocused: null
   };
 
-  onDatesChange = ({startDate, endDate}) => {
+  onDatesChange = ({ startDate, endDate }) => {
     this.props.setStartDate(startDate);
     this.props.setEndDate(endDate);
   };
@@ -26,12 +26,12 @@ export class ExpenseListFilters extends React.Component {
     else this.props.sortByAmount();
   };
 
-  render () {
+  render() {
     return (
       <div>
         <input type="text"
           value={this.props.filters.text}
-          onChange={this.onTextChange}/>
+          onChange={this.onTextChange} />
         <select
           value={this.props.filters.sortBy}
           onChange={this.onSortChange}
