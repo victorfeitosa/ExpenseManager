@@ -65,7 +65,7 @@ const matchDispatchToProps = (dispatch) => ({
   sortByDate: () => dispatch(sortByDate()),
   sortByAmount: () => dispatch(sortByAmount()),
   setStartDate: (date) => dispatch(setStartDate(date)),
-  setEndDate: (date) => dispatch(setEndtDate(date))
+  setEndDate: (date) => dispatch(setEndDate(date))
 });
 
 export default connect(mapStateToProps, matchDispatchToProps)(ExpenseListFilters);

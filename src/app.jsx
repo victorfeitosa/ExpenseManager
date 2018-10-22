@@ -14,6 +14,8 @@ import './styles/styles.scss';
 
 const store = configureStore();
 
+store.dispatch(addExpense({ description: 'Coffee', amount: 125, createdAt: 642531 }));
+
 const jsx = (
   <Provider store={store}>
     <AppRouter />
