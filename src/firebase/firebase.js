@@ -14,17 +14,4 @@ firebase.initializeApp(config);
 
 const db = firebase.database();
 
-db.ref().set({
-  name: 'Victor Feitosa',
-  age: 29,
-  isSingle: false,
-  location: {
-    city: 'Fortaleza',
-    country: 'Brazil'
-  }
-});
-
-db.ref('attributes').set({
-  height: 1.73,
-  weight: 84
-});
+export { firebase, db as default };
