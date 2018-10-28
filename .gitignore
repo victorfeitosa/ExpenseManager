@@ -3,3 +3,5 @@ node_modules
 public/dist/*.js
 public/dist/*.css
 public/dist/*.map
+
+.env.*
