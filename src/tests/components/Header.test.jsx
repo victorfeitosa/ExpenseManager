@@ -5,6 +5,6 @@ import toJson from 'enzyme-to-json';
 import { shallow } from 'enzyme';
 
 test('should render Header correctly', () => {
-  const wrapper = shallow(<Header isLoggedIn={true}/>);
+  const wrapper = shallow(<Header startLogout={() => {}}/>);
   expect(toJson(wrapper)).toMatchSnapshot();
 });

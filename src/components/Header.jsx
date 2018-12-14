@@ -1,25 +1,35 @@
-import React from 'react';
-import { connect } from 'react-redux';
-import { NavLink } from 'react-router-dom';
+import React from "react";
+import { connect } from "react-redux";
+import { NavLink } from "react-router-dom";
+import { startLogout } from "../actions/auth";
 
-export const Header = (props) => (
-   <header>
-      {
-         true &&
-         <div>
-            <h1>Expense Manager</h1>
-            <nav>
-               <NavLink to="/" activeClassName="is-active" exact={true}>Home</NavLink>
-               <NavLink to="/create" activeClassName="is-active">Create expense</NavLink>
-               <NavLink to="/help" activeClassName="is-active">Help</NavLink>
-            </nav>
-         </div>
-      }
-   </header>
+export const Header = ({ startLogout }) => (
+  <header>
+    {true && (
+      <div>
+        <h1>Expense Manager</h1>
+        <nav>
+          <NavLink to="/" activeClassName="is-active" exact={true}>
+            Home
+          </NavLink>
+          <NavLink to="/create" activeClassName="is-active">
+            Create expense
+          </NavLink>
+          <NavLink to="/help" activeClassName="is-active">
+            Help
+          </NavLink>
+          <button onClick={startLogout}>Logout</button>
+        </nav>
+      </div>
+    )}
+  </header>
 );
 
-// const mapStateToProps = (state) => ({
-//    isLoggedIn: state.app.loggedIn
-// });
+const mapDispatchToProps = dispatch => ({
+  logOut: () => dispatch(startLogout())
+});
 
-export default connect()(Header);
+export default connect(
+  null,
+  mapDispatchToProps
+)(Header);
