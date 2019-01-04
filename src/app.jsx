@@ -3,13 +3,14 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import AppRouter, {history} from './routers/AppRouter';
 import configureStore from './store/configureStore';
-import moment from 'moment';
 import { startSetExpenses } from './actions/expenses';
+import { login, logout } from './actions/auth';
 import 'react-dates/lib/css/_datepicker.css';
 import { firebase } from './firebase/firebase';
 
 import 'normalize.css/normalize.css';
 import './styles/styles.scss';
+
 
 const store = configureStore();
 
@@ -32,7 +33,7 @@ ReactDOM.render(<p>Loading...</p>, document.getElementById("app"));
 
 firebase.auth().onAuthStateChanged(user => {
   if(user) {
-    console.log('Redirecting to dashboard');
+    store.dispatch(login(user.uid));
     store.dispatch(startSetExpenses())
     .then(() => {
       renderApp();
@@ -41,7 +42,7 @@ firebase.auth().onAuthStateChanged(user => {
       }
     });
   } else {
-    console.log('Redirecting to home');
+    store.dispatch(logout());
     history.push('/');
     renderApp();
   }
