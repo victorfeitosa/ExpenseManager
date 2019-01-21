@@ -38,12 +38,12 @@ firebase.auth().onAuthStateChanged(user => {
     .then(() => {
       renderApp();
       if(history.location.pathname === '/') {
-        history.push('/dashboard');
+        history.push('/');
       }
     });
   } else {
     store.dispatch(logout());
-    history.push('/');
+    history.push('/login');
     renderApp();
   }
 });
