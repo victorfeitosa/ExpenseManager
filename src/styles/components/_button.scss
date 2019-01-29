@@ -9,6 +9,9 @@
   padding: $s-size;
   text-decoration: none;
 
+  &--secondary {
+    background: $red;
+  }
   &--link {
     background: none;
   }

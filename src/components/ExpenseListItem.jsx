@@ -4,13 +4,18 @@ import numeral from 'numeral';
 import { Link } from 'react-router-dom';
 
 const ExpenseListItem = ({id, description, amount, createdAt}) => (
-  <div>
-    <p>{description}</p>
-    <b>{numeral(amount / 100).format('$0,0.00')}</b>
-    <p> - {moment(createdAt).format('DD/MM/YYYY')}</p>
-
-    <Link to={'/edit/' + id.toString()}>Edit</Link>
-  </div>
+  <Link
+    className='list-item'
+    to={'/edit/' + id.toString()}
+  >
+    <div>
+      <h3 className='list-item__title'>{description}</h3>
+      <span className='list-item__subtitle'>{moment(createdAt).format('DD/MM/YYYY')}</span>
+    </div>
+    <h3 className='list-item__data'>
+      {numeral(amount / 100).format('$0,0.00')}
+    </h3>
+  </Link>
 );
 
 export default ExpenseListItem;
