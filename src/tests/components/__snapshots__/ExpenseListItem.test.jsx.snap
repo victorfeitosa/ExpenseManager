@@ -21,26 +21,30 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "host",
+    "nodeType": "class",
     "props": Object {
       "children": Array [
-        <p>
-          Gum
-        </p>,
-        <b>
-          $1.55
-        </b>,
-        <p>
-           - 
-          31/12/1969
-        </p>,
-        <Link
-          replace={false}
-          to="/edit/1"
+        <div>
+          <h3
+            className="list-item__title"
+          >
+            Gum
+          </h3>
+          <span
+            className="list-item__subtitle"
+          >
+            31/12/1969
+          </span>
+        </div>,
+        <h3
+          className="list-item__data"
         >
-          Edit
-        </Link>,
+          $1.55
+        </h3>,
       ],
+      "className": "list-item",
+      "replace": false,
+      "to": "/edit/1",
     },
     "ref": null,
     "rendered": Array [
@@ -49,11 +53,47 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Gum",
+          "children": Array [
+            <h3
+              className="list-item__title"
+            >
+              Gum
+            </h3>,
+            <span
+              className="list-item__subtitle"
+            >
+              31/12/1969
+            </span>,
+          ],
         },
         "ref": null,
-        "rendered": "Gum",
-        "type": "p",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Gum",
+              "className": "list-item__title",
+            },
+            "ref": null,
+            "rendered": "Gum",
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "31/12/1969",
+              "className": "list-item__subtitle",
+            },
+            "ref": null,
+            "rendered": "31/12/1969",
+            "type": "span",
+          },
+        ],
+        "type": "div",
       },
       Object {
         "instance": null,
@@ -61,68 +101,43 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "$1.55",
+          "className": "list-item__data",
         },
         "ref": null,
         "rendered": "$1.55",
-        "type": "b",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            " - ",
-            "31/12/1969",
-          ],
-        },
-        "ref": null,
-        "rendered": Array [
-          " - ",
-          "31/12/1969",
-        ],
-        "type": "p",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": "Edit",
-          "replace": false,
-          "to": "/edit/1",
-        },
-        "ref": null,
-        "rendered": "Edit",
-        "type": [Function],
+        "type": "h3",
       },
     ],
-    "type": "div",
+    "type": [Function],
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "host",
+      "nodeType": "class",
       "props": Object {
         "children": Array [
-          <p>
-            Gum
-          </p>,
-          <b>
-            $1.55
-          </b>,
-          <p>
-             - 
-            31/12/1969
-          </p>,
-          <Link
-            replace={false}
-            to="/edit/1"
+          <div>
+            <h3
+              className="list-item__title"
+            >
+              Gum
+            </h3>
+            <span
+              className="list-item__subtitle"
+            >
+              31/12/1969
+            </span>
+          </div>,
+          <h3
+            className="list-item__data"
           >
-            Edit
-          </Link>,
+            $1.55
+          </h3>,
         ],
+        "className": "list-item",
+        "replace": false,
+        "to": "/edit/1",
       },
       "ref": null,
       "rendered": Array [
@@ -131,11 +146,47 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Gum",
+            "children": Array [
+              <h3
+                className="list-item__title"
+              >
+                Gum
+              </h3>,
+              <span
+                className="list-item__subtitle"
+              >
+                31/12/1969
+              </span>,
+            ],
           },
           "ref": null,
-          "rendered": "Gum",
-          "type": "p",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Gum",
+                "className": "list-item__title",
+              },
+              "ref": null,
+              "rendered": "Gum",
+              "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "31/12/1969",
+                "className": "list-item__subtitle",
+              },
+              "ref": null,
+              "rendered": "31/12/1969",
+              "type": "span",
+            },
+          ],
+          "type": "div",
         },
         Object {
           "instance": null,
@@ -143,43 +194,14 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "$1.55",
+            "className": "list-item__data",
           },
           "ref": null,
           "rendered": "$1.55",
-          "type": "b",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              " - ",
-              "31/12/1969",
-            ],
-          },
-          "ref": null,
-          "rendered": Array [
-            " - ",
-            "31/12/1969",
-          ],
-          "type": "p",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": "Edit",
-            "replace": false,
-            "to": "/edit/1",
-          },
-          "ref": null,
-          "rendered": "Edit",
-          "type": [Function],
+          "type": "h3",
         },
       ],
-      "type": "div",
+      "type": [Function],
     },
   ],
   Symbol(enzyme.__options__): Object {

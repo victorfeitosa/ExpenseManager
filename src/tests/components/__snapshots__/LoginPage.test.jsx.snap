@@ -17,9 +17,24 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <button>
-        Login
-      </button>,
+      "children": <div
+        className="box-layout__box"
+      >
+        <h1
+          className="box-layout__title"
+        >
+          Expense Manager
+        </h1>
+        <p>
+          Have your expenses under control.
+        </p>
+        <button
+          className="button"
+        >
+          Login witgh Google
+        </button>
+      </div>,
+      "className": "box-layout",
     },
     "ref": null,
     "rendered": Object {
@@ -27,12 +42,63 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": "Login",
-        "onClick": undefined,
+        "children": Array [
+          <h1
+            className="box-layout__title"
+          >
+            Expense Manager
+          </h1>,
+          <p>
+            Have your expenses under control.
+          </p>,
+          <button
+            className="button"
+          >
+            Login witgh Google
+          </button>,
+        ],
+        "className": "box-layout__box",
       },
       "ref": null,
-      "rendered": "Login",
-      "type": "button",
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Expense Manager",
+            "className": "box-layout__title",
+          },
+          "ref": null,
+          "rendered": "Expense Manager",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Have your expenses under control.",
+          },
+          "ref": null,
+          "rendered": "Have your expenses under control.",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Login witgh Google",
+            "className": "button",
+            "onClick": undefined,
+          },
+          "ref": null,
+          "rendered": "Login witgh Google",
+          "type": "button",
+        },
+      ],
+      "type": "div",
     },
     "type": "div",
   },
@@ -42,9 +108,24 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <button>
-          Login
-        </button>,
+        "children": <div
+          className="box-layout__box"
+        >
+          <h1
+            className="box-layout__title"
+          >
+            Expense Manager
+          </h1>
+          <p>
+            Have your expenses under control.
+          </p>
+          <button
+            className="button"
+          >
+            Login witgh Google
+          </button>
+        </div>,
+        "className": "box-layout",
       },
       "ref": null,
       "rendered": Object {
@@ -52,12 +133,63 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Login",
-          "onClick": undefined,
+          "children": Array [
+            <h1
+              className="box-layout__title"
+            >
+              Expense Manager
+            </h1>,
+            <p>
+              Have your expenses under control.
+            </p>,
+            <button
+              className="button"
+            >
+              Login witgh Google
+            </button>,
+          ],
+          "className": "box-layout__box",
         },
         "ref": null,
-        "rendered": "Login",
-        "type": "button",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Expense Manager",
+              "className": "box-layout__title",
+            },
+            "ref": null,
+            "rendered": "Expense Manager",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Have your expenses under control.",
+            },
+            "ref": null,
+            "rendered": "Have your expenses under control.",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Login witgh Google",
+              "className": "button",
+              "onClick": undefined,
+            },
+            "ref": null,
+            "rendered": "Login witgh Google",
+            "type": "button",
+          },
+        ],
+        "type": "div",
       },
       "type": "div",
     },

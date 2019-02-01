@@ -25,13 +25,27 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <h1>
-          Add expenses
-        </h1>,
-        <ExpenseForm
-          buttonText="Add expense"
-          onSubmit={[Function]}
-        />,
+        <div
+          className="page-header"
+        >
+          <div
+            className="content-container"
+          >
+            <h1
+              className="page-header__title"
+            >
+              Add expenses
+            </h1>
+          </div>
+        </div>,
+        <div
+          className="content-container"
+        >
+          <ExpenseForm
+            buttonText="Save expense"
+            onSubmit={[Function]}
+          />
+        </div>,
       ],
     },
     "ref": null,
@@ -41,23 +55,72 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Add expenses",
+          "children": <div
+            className="content-container"
+          >
+            <h1
+              className="page-header__title"
+            >
+              Add expenses
+            </h1>
+          </div>,
+          "className": "page-header",
         },
         "ref": null,
-        "rendered": "Add expenses",
-        "type": "h1",
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <h1
+              className="page-header__title"
+            >
+              Add expenses
+            </h1>,
+            "className": "content-container",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Add expenses",
+              "className": "page-header__title",
+            },
+            "ref": null,
+            "rendered": "Add expenses",
+            "type": "h1",
+          },
+          "type": "div",
+        },
+        "type": "div",
       },
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "class",
+        "nodeType": "host",
         "props": Object {
-          "buttonText": "Add expense",
-          "onSubmit": [Function],
+          "children": <ExpenseForm
+            buttonText="Save expense"
+            onSubmit={[Function]}
+          />,
+          "className": "content-container",
         },
         "ref": null,
-        "rendered": null,
-        "type": [Function],
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "buttonText": "Save expense",
+            "onSubmit": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": "div",
       },
     ],
     "type": "div",
@@ -69,13 +132,27 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <h1>
-            Add expenses
-          </h1>,
-          <ExpenseForm
-            buttonText="Add expense"
-            onSubmit={[Function]}
-          />,
+          <div
+            className="page-header"
+          >
+            <div
+              className="content-container"
+            >
+              <h1
+                className="page-header__title"
+              >
+                Add expenses
+              </h1>
+            </div>
+          </div>,
+          <div
+            className="content-container"
+          >
+            <ExpenseForm
+              buttonText="Save expense"
+              onSubmit={[Function]}
+            />
+          </div>,
         ],
       },
       "ref": null,
@@ -85,23 +162,72 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Add expenses",
+            "children": <div
+              className="content-container"
+            >
+              <h1
+                className="page-header__title"
+              >
+                Add expenses
+              </h1>
+            </div>,
+            "className": "page-header",
           },
           "ref": null,
-          "rendered": "Add expenses",
-          "type": "h1",
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <h1
+                className="page-header__title"
+              >
+                Add expenses
+              </h1>,
+              "className": "content-container",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Add expenses",
+                "className": "page-header__title",
+              },
+              "ref": null,
+              "rendered": "Add expenses",
+              "type": "h1",
+            },
+            "type": "div",
+          },
+          "type": "div",
         },
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "class",
+          "nodeType": "host",
           "props": Object {
-            "buttonText": "Add expense",
-            "onSubmit": [Function],
+            "children": <ExpenseForm
+              buttonText="Save expense"
+              onSubmit={[Function]}
+            />,
+            "className": "content-container",
           },
           "ref": null,
-          "rendered": null,
-          "type": [Function],
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "buttonText": "Save expense",
+              "onSubmit": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": "div",
         },
       ],
       "type": "div",
