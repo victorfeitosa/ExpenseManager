@@ -2,6 +2,7 @@ import React from 'react';
 import moment from 'moment';
 import 'react-dates/initialize';
 import { SingleDatePicker } from 'react-dates';
+import { Link } from 'react-router-dom';
 
 export default class ExpenseForm extends React.Component {
   constructor(props) {
@@ -64,6 +65,11 @@ export default class ExpenseForm extends React.Component {
     }
   };
 
+  onCancelSubmission = (e) => {
+    e.preventDefault();
+    console.log(this.props.history);
+  }
+
   render() {
     return (
       <form className='form' onSubmit={this.onSubmit}>
@@ -90,6 +96,7 @@ export default class ExpenseForm extends React.Component {
           onFocusChange={this.onFocusChange}
           numberOfMonths={1}
           isOutsideRange={() => false}
+          block
         />
         <textarea
           className='textarea'
@@ -100,7 +107,16 @@ export default class ExpenseForm extends React.Component {
         <div>
           <button
             className='button'
-          >{this.props.buttonText}</button>
+            type='submit'
+          >
+            {this.props.buttonText}
+          </button>
+          <Link
+            className='button button--tertiary'
+            to='/'
+          >
+            Cancel
+          </Link>
         </div>
       </form>
     );

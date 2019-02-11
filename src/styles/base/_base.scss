@@ -26,3 +26,7 @@ button {
 .is-active {
   background-color: red;
 }
+
+select, input, textarea {
+  border-radius: 0;
+}
