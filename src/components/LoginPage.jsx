@@ -9,8 +9,8 @@ export const LoginPage = ({ loginWithGoogle, loginWithGithub }) => (
       <h1 className='box-layout__title'>Expense Manager</h1>
       <p>Have your expenses under control.</p>
       <h3>Login with</h3>
-      <button title='Google' id='login-google' className='button button--wide button--secondary' onClick={loginWithGoogle}><FaGoogle/></button>
-      <button title='GitHub' id='login-github' className='button button--wide button--tertiary' onClick={loginWithGithub}><FaGithub/></button>
+      <button title='Google' id='login-google' className='button button--wide button--google' onClick={loginWithGoogle}><FaGoogle/></button>
+      <button title='GitHub' id='login-github' className='button button--wide button--github' onClick={loginWithGithub}><FaGithub/></button>
     </div>
   </div>
 );

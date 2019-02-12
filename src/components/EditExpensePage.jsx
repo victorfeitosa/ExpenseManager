@@ -29,7 +29,7 @@ export class EditExpensePage extends React.Component {
             onSubmit={this.onSubmit}>
           </ExpenseForm>
           <button
-            className='button button--secondary'
+            className='button button--danger'
             onClick={this.onRemove}
           >
             Remove Expense &times;

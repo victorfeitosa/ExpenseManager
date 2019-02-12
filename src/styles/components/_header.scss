@@ -1,5 +1,5 @@
 .header {
-  background: $dark-blue;
+  background: $base;
 
   &__content {
     align-items: center;
@@ -9,7 +9,7 @@
   }
 
   &__title {
-    color: white;
+    color: $background;
     text-decoration: none;
 
     h1 {

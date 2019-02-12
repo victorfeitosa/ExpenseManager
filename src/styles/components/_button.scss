@@ -1,12 +1,12 @@
 .button {
-  background-color: $blue;
+  background-color: $primary;
   border: 0;
-  color: white;
+  color: $background;
   display: inline-block;
   font-size: $font-size-large;
   font-weight: 300;
   line-height: 1;
-  margin: 0 1rem;
+  margin-right: 1rem;
   padding: $s-size;
   text-decoration: none;
 
@@ -15,11 +15,20 @@
   }
 
   &--secondary {
-    background: $red;
+    background: $dull;
   }
 
   &--tertiary {
-    background: $dark-grey;
+    background: $secondary;
+  }
+
+  &--google,
+  &--danger {
+    background: $warning;
+  }
+
+  &--github {
+    background: $dark;
   }
   &--link {
     background: none;
