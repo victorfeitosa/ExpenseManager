@@ -37,7 +37,7 @@ ShallowWrapper {
         <withStyles(SingleDatePicker)
           anchorDirection="left"
           appendToBody={false}
-          block={false}
+          block={true}
           calendarInfoPosition="bottom"
           customCloseIcon={null}
           customInputIcon={null}
@@ -132,7 +132,15 @@ ShallowWrapper {
         <div>
           <button
             className="button"
+            type="submit"
           />
+          <Link
+            className="button button--tertiary"
+            replace={false}
+            to="/"
+          >
+            Cancel
+          </Link>
         </div>,
       ],
       "className": "form",
@@ -179,7 +187,7 @@ ShallowWrapper {
         "props": Object {
           "anchorDirection": "left",
           "appendToBody": false,
-          "block": false,
+          "block": true,
           "calendarInfoPosition": "bottom",
           "customCloseIcon": null,
           "customInputIcon": null,
@@ -289,23 +297,50 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": <button
-            className="button"
-          />,
+          "children": Array [
+            <button
+              className="button"
+              type="submit"
+            />,
+            <Link
+              className="button button--tertiary"
+              replace={false}
+              to="/"
+            >
+              Cancel
+            </Link>,
+          ],
         },
         "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": undefined,
-            "className": "button",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": undefined,
+              "className": "button",
+              "type": "submit",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "button",
           },
-          "ref": null,
-          "rendered": null,
-          "type": "button",
-        },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Cancel",
+              "className": "button button--tertiary",
+              "replace": false,
+              "to": "/",
+            },
+            "ref": null,
+            "rendered": "Cancel",
+            "type": [Function],
+          },
+        ],
         "type": "div",
       },
     ],
@@ -337,7 +372,7 @@ ShallowWrapper {
           <withStyles(SingleDatePicker)
             anchorDirection="left"
             appendToBody={false}
-            block={false}
+            block={true}
             calendarInfoPosition="bottom"
             customCloseIcon={null}
             customInputIcon={null}
@@ -432,7 +467,15 @@ ShallowWrapper {
           <div>
             <button
               className="button"
+              type="submit"
             />
+            <Link
+              className="button button--tertiary"
+              replace={false}
+              to="/"
+            >
+              Cancel
+            </Link>
           </div>,
         ],
         "className": "form",
@@ -479,7 +522,7 @@ ShallowWrapper {
           "props": Object {
             "anchorDirection": "left",
             "appendToBody": false,
-            "block": false,
+            "block": true,
             "calendarInfoPosition": "bottom",
             "customCloseIcon": null,
             "customInputIcon": null,
@@ -589,23 +632,50 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": <button
-              className="button"
-            />,
+            "children": Array [
+              <button
+                className="button"
+                type="submit"
+              />,
+              <Link
+                className="button button--tertiary"
+                replace={false}
+                to="/"
+              >
+                Cancel
+              </Link>,
+            ],
           },
           "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": undefined,
-              "className": "button",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": undefined,
+                "className": "button",
+                "type": "submit",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "button",
             },
-            "ref": null,
-            "rendered": null,
-            "type": "button",
-          },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Cancel",
+                "className": "button button--tertiary",
+                "replace": false,
+                "to": "/",
+              },
+              "ref": null,
+              "rendered": "Cancel",
+              "type": [Function],
+            },
+          ],
           "type": "div",
         },
       ],
@@ -681,7 +751,7 @@ ShallowWrapper {
         <withStyles(SingleDatePicker)
           anchorDirection="left"
           appendToBody={false}
-          block={false}
+          block={true}
           calendarInfoPosition="bottom"
           customCloseIcon={null}
           customInputIcon={null}
@@ -776,7 +846,15 @@ ShallowWrapper {
         <div>
           <button
             className="button"
+            type="submit"
           />
+          <Link
+            className="button button--tertiary"
+            replace={false}
+            to="/"
+          >
+            Cancel
+          </Link>
         </div>,
       ],
       "className": "form",
@@ -823,7 +901,7 @@ ShallowWrapper {
         "props": Object {
           "anchorDirection": "left",
           "appendToBody": false,
-          "block": false,
+          "block": true,
           "calendarInfoPosition": "bottom",
           "customCloseIcon": null,
           "customInputIcon": null,
@@ -933,23 +1011,50 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": <button
-            className="button"
-          />,
+          "children": Array [
+            <button
+              className="button"
+              type="submit"
+            />,
+            <Link
+              className="button button--tertiary"
+              replace={false}
+              to="/"
+            >
+              Cancel
+            </Link>,
+          ],
         },
         "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": undefined,
-            "className": "button",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": undefined,
+              "className": "button",
+              "type": "submit",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "button",
           },
-          "ref": null,
-          "rendered": null,
-          "type": "button",
-        },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Cancel",
+              "className": "button button--tertiary",
+              "replace": false,
+              "to": "/",
+            },
+            "ref": null,
+            "rendered": "Cancel",
+            "type": [Function],
+          },
+        ],
         "type": "div",
       },
     ],
@@ -981,7 +1086,7 @@ ShallowWrapper {
           <withStyles(SingleDatePicker)
             anchorDirection="left"
             appendToBody={false}
-            block={false}
+            block={true}
             calendarInfoPosition="bottom"
             customCloseIcon={null}
             customInputIcon={null}
@@ -1076,7 +1181,15 @@ ShallowWrapper {
           <div>
             <button
               className="button"
+              type="submit"
             />
+            <Link
+              className="button button--tertiary"
+              replace={false}
+              to="/"
+            >
+              Cancel
+            </Link>
           </div>,
         ],
         "className": "form",
@@ -1123,7 +1236,7 @@ ShallowWrapper {
           "props": Object {
             "anchorDirection": "left",
             "appendToBody": false,
-            "block": false,
+            "block": true,
             "calendarInfoPosition": "bottom",
             "customCloseIcon": null,
             "customInputIcon": null,
@@ -1233,23 +1346,50 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": <button
-              className="button"
-            />,
+            "children": Array [
+              <button
+                className="button"
+                type="submit"
+              />,
+              <Link
+                className="button button--tertiary"
+                replace={false}
+                to="/"
+              >
+                Cancel
+              </Link>,
+            ],
           },
           "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": undefined,
-              "className": "button",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": undefined,
+                "className": "button",
+                "type": "submit",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "button",
             },
-            "ref": null,
-            "rendered": null,
-            "type": "button",
-          },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Cancel",
+                "className": "button button--tertiary",
+                "replace": false,
+                "to": "/",
+              },
+              "ref": null,
+              "rendered": "Cancel",
+              "type": [Function],
+            },
+          ],
           "type": "div",
         },
       ],
@@ -1319,7 +1459,7 @@ ShallowWrapper {
         <withStyles(SingleDatePicker)
           anchorDirection="left"
           appendToBody={false}
-          block={false}
+          block={true}
           calendarInfoPosition="bottom"
           customCloseIcon={null}
           customInputIcon={null}
@@ -1414,7 +1554,15 @@ ShallowWrapper {
         <div>
           <button
             className="button"
+            type="submit"
           />
+          <Link
+            className="button button--tertiary"
+            replace={false}
+            to="/"
+          >
+            Cancel
+          </Link>
         </div>,
       ],
       "className": "form",
@@ -1472,7 +1620,7 @@ ShallowWrapper {
         "props": Object {
           "anchorDirection": "left",
           "appendToBody": false,
-          "block": false,
+          "block": true,
           "calendarInfoPosition": "bottom",
           "customCloseIcon": null,
           "customInputIcon": null,
@@ -1582,23 +1730,50 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": <button
-            className="button"
-          />,
+          "children": Array [
+            <button
+              className="button"
+              type="submit"
+            />,
+            <Link
+              className="button button--tertiary"
+              replace={false}
+              to="/"
+            >
+              Cancel
+            </Link>,
+          ],
         },
         "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": undefined,
-            "className": "button",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": undefined,
+              "className": "button",
+              "type": "submit",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "button",
           },
-          "ref": null,
-          "rendered": null,
-          "type": "button",
-        },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Cancel",
+              "className": "button button--tertiary",
+              "replace": false,
+              "to": "/",
+            },
+            "ref": null,
+            "rendered": "Cancel",
+            "type": [Function],
+          },
+        ],
         "type": "div",
       },
     ],
@@ -1634,7 +1809,7 @@ ShallowWrapper {
           <withStyles(SingleDatePicker)
             anchorDirection="left"
             appendToBody={false}
-            block={false}
+            block={true}
             calendarInfoPosition="bottom"
             customCloseIcon={null}
             customInputIcon={null}
@@ -1729,7 +1904,15 @@ ShallowWrapper {
           <div>
             <button
               className="button"
+              type="submit"
             />
+            <Link
+              className="button button--tertiary"
+              replace={false}
+              to="/"
+            >
+              Cancel
+            </Link>
           </div>,
         ],
         "className": "form",
@@ -1787,7 +1970,7 @@ ShallowWrapper {
           "props": Object {
             "anchorDirection": "left",
             "appendToBody": false,
-            "block": false,
+            "block": true,
             "calendarInfoPosition": "bottom",
             "customCloseIcon": null,
             "customInputIcon": null,
@@ -1897,23 +2080,50 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": <button
-              className="button"
-            />,
+            "children": Array [
+              <button
+                className="button"
+                type="submit"
+              />,
+              <Link
+                className="button button--tertiary"
+                replace={false}
+                to="/"
+              >
+                Cancel
+              </Link>,
+            ],
           },
           "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": undefined,
-              "className": "button",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": undefined,
+                "className": "button",
+                "type": "submit",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "button",
             },
-            "ref": null,
-            "rendered": null,
-            "type": "button",
-          },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Cancel",
+                "className": "button button--tertiary",
+                "replace": false,
+                "to": "/",
+              },
+              "ref": null,
+              "rendered": "Cancel",
+              "type": [Function],
+            },
+          ],
           "type": "div",
         },
       ],

@@ -67,7 +67,6 @@ export default class ExpenseForm extends React.Component {
 
   onCancelSubmission = (e) => {
     e.preventDefault();
-    console.log(this.props.history);
   }
 
   render() {

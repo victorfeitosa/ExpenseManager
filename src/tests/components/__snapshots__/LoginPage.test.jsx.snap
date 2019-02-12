@@ -28,10 +28,22 @@ ShallowWrapper {
         <p>
           Have your expenses under control.
         </p>
+        <h3>
+          Login with
+        </h3>
         <button
-          className="button"
+          className="button button--wide button--secondary"
+          id="login-google"
+          title="Google"
         >
-          Login witgh Google
+          <FaGoogle />
+        </button>
+        <button
+          className="button button--wide button--tertiary"
+          id="login-github"
+          title="GitHub"
+        >
+          <FaGithub />
         </button>
       </div>,
       "className": "box-layout",
@@ -51,10 +63,22 @@ ShallowWrapper {
           <p>
             Have your expenses under control.
           </p>,
+          <h3>
+            Login with
+          </h3>,
           <button
-            className="button"
+            className="button button--wide button--secondary"
+            id="login-google"
+            title="Google"
           >
-            Login witgh Google
+            <FaGoogle />
+          </button>,
+          <button
+            className="button button--wide button--tertiary"
+            id="login-github"
+            title="GitHub"
+          >
+            <FaGithub />
           </button>,
         ],
         "className": "box-layout__box",
@@ -89,12 +113,56 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Login witgh Google",
-            "className": "button",
-            "onClick": undefined,
+            "children": "Login with",
           },
           "ref": null,
-          "rendered": "Login witgh Google",
+          "rendered": "Login with",
+          "type": "h3",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <FaGoogle />,
+            "className": "button button--wide button--secondary",
+            "id": "login-google",
+            "onClick": undefined,
+            "title": "Google",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <FaGithub />,
+            "className": "button button--wide button--tertiary",
+            "id": "login-github",
+            "onClick": undefined,
+            "title": "GitHub",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
           "type": "button",
         },
       ],
@@ -119,10 +187,22 @@ ShallowWrapper {
           <p>
             Have your expenses under control.
           </p>
+          <h3>
+            Login with
+          </h3>
           <button
-            className="button"
+            className="button button--wide button--secondary"
+            id="login-google"
+            title="Google"
           >
-            Login witgh Google
+            <FaGoogle />
+          </button>
+          <button
+            className="button button--wide button--tertiary"
+            id="login-github"
+            title="GitHub"
+          >
+            <FaGithub />
           </button>
         </div>,
         "className": "box-layout",
@@ -142,10 +222,22 @@ ShallowWrapper {
             <p>
               Have your expenses under control.
             </p>,
+            <h3>
+              Login with
+            </h3>,
             <button
-              className="button"
+              className="button button--wide button--secondary"
+              id="login-google"
+              title="Google"
             >
-              Login witgh Google
+              <FaGoogle />
+            </button>,
+            <button
+              className="button button--wide button--tertiary"
+              id="login-github"
+              title="GitHub"
+            >
+              <FaGithub />
             </button>,
           ],
           "className": "box-layout__box",
@@ -180,12 +272,56 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Login witgh Google",
-              "className": "button",
-              "onClick": undefined,
+              "children": "Login with",
             },
             "ref": null,
-            "rendered": "Login witgh Google",
+            "rendered": "Login with",
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <FaGoogle />,
+              "className": "button button--wide button--secondary",
+              "id": "login-google",
+              "onClick": undefined,
+              "title": "Google",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": "button",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <FaGithub />,
+              "className": "button button--wide button--tertiary",
+              "id": "login-github",
+              "onClick": undefined,
+              "title": "GitHub",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
             "type": "button",
           },
         ],
