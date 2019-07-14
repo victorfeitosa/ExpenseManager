@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import AppRouter, {history} from './routers/AppRouter';
+import AppRouter, { history } from './routers/AppRouter';
 import LoadingPage from './components/LoadingPage';
 import configureStore from './store/configureStore';
 import { startSetExpenses } from './actions/expenses';
@@ -23,7 +23,7 @@ const jsx = (
 
 let hasRendered = false;
 const renderApp = () => {
-  if(!hasRendered) {
+  if (!hasRendered) {
     ReactDOM.render(jsx, document.getElementById("app"));
     hasRendered = true;
   }
@@ -33,15 +33,15 @@ const renderApp = () => {
 ReactDOM.render(<LoadingPage />, document.getElementById("app"));
 
 firebase.auth().onAuthStateChanged(user => {
-  if(user) {
+  if (user) {
     store.dispatch(login(user.uid));
     store.dispatch(startSetExpenses())
-    .then(() => {
-      renderApp();
-      if(history.location.pathname === '/') {
-        history.push('/');
-      }
-    });
+      .then(() => {
+        renderApp();
+        if (history.location.pathname === '/') {
+          history.push('/');
+        }
+      });
   } else {
     store.dispatch(logout());
     history.push('/login');
